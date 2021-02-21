@@ -68,8 +68,8 @@ const questions = [{
 // THEN a high-quality, professional README.md is generated with the title of my project and sections entitled 
 // Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data,function(err){
+function writeToFile(fileName, answers) {
+    fs.writeFile(fileName, answers,function(err){
         console.log(fileName),
         console.log(answers),
         err ? console.error(err) : console.log("Written to file...");
@@ -78,9 +78,9 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prompt(questions).then((data) => {
-        writeToFile("Develop\README.md",generateMarkdown(data));
-        console.log(data);
+    inquirer.prompt(questions).then((answers) => {
+        writeToFile("README.md",generateMarkdown(answers));
+        console.log(answers);
 
     });
 }
