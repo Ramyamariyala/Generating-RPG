@@ -8,7 +8,7 @@ const generatorMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [{
-    type = "input",
+    type : "input",
     message: "What is your Github username?",
     name: "username",
     validate: (answer) => {
@@ -18,7 +18,7 @@ const questions = [{
         return true;
     },
 }, {
-    type = "input",
+    type : "input",
     message: "What is your email address?",
     name: "Email",
     validate: (answer) => {
@@ -28,7 +28,7 @@ const questions = [{
         return true;
     },
 }, {
-    type = "input",
+    type: "input",
     message: "What is project's name?",
     name: "Title",
     validate: (answer) => {
@@ -43,16 +43,16 @@ const questions = [{
     name: "userStory",
 
 }, {
-    type = "input",
+    type: "input",
     message: "Write a short despription for your project?",
     name: "Despription"
 }, {
-    type = "list",
+    type: "list",
     message: "What is the license used for this project?",
     name: "License",
     choices: ["MIT","APACHE 2.0","MOZILLA","GPL 3.0","None"],
 }, {
-    type = "input",
+    type: "input",
     message: "How does the user install the app?",
     name: "Installation",
 }, {
@@ -71,7 +71,7 @@ const questions = [{
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data,function(err){
         console.log(fileName),
-        console.log(data),
+        console.log(answers),
         err ? console.error(err) : console.log("Written to file...");
     });
 }
@@ -79,7 +79,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then((data) => {
-        writeToFile("README.md",generateMarkdown(data));
+        writeToFile("Develop\README.md",generateMarkdown(data));
         console.log(data);
 
     });
