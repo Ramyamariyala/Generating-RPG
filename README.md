@@ -14,8 +14,12 @@ using it.
 
 
 
-![Deployed link](https://ramyamariyala.github.io/Generating-RPG/)
+[Deployed link](https://ramyamariyala.github.io/Generating-RPG/)
 
-![Github repo](https://github.com/Ramyamariyala/Generating-RPG.git)
+[Github repo](https://github.com/Ramyamariyala/Generating-RPG.git)
 
 ![GIF](video\README.gif)
+
+## Contact Information
+ * Name :Ramya Mariyala
+ * Email: ramya.mariyala@gmail.com
