@@ -18,7 +18,7 @@ using it.
 
 [Github repo](https://github.com/Ramyamariyala/Generating-RPG.git)
 
-![GIF](video\README.gif)
+![Gif](assests/README.gif)
 
 ## Contact Information
  * Name :Ramya Mariyala
